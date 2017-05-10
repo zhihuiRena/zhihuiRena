@@ -50,11 +50,11 @@
     grid-row: 1;
     @media #{$medium-up} {
       grid-column: 1 / span 6;
-      grid-row: 1 / span 3;
+      grid-row: 1 / span 6;
     }
     @media #{$large-up} {
       grid-column: 1 / span 6;
-      grid-row-end: span 3;
+      grid-row-end: span 8;
     }
   }
   @supports not (display: grid) {
