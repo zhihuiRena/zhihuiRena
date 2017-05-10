@@ -1,0 +1,14 @@
+<footer class="footer {% if page.url == '/' %}footer--home{% else %}footer--primary{% endif %}" role="contentinfo">
+  <div class="container">
+    {% if page.url != '/' %}
+      <div class="footer__about">
+        {{ "我是支惠，欢迎浏览我的主页" | markdownify }}
+      </div>
+    {% endif %}
+
+    <small class="copyright">&copy; 2017&ndash;{{ site.time | date: "%Y" }} 支惠 &middot; Hosted by <a href="https://github.com/zhihuiRena">GitHub</a> &middot;</small>
+    <ul class="footer__social-links">
+      <li><a href="mailto:zhihuistop1@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>

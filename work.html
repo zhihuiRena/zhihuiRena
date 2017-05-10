@@ -1,0 +1,29 @@
+---
+layout: default
+title: Portfolio
+seo_title: Work by Hui Zhi
+permalink: /portfolio/
+---
+
+<header class="page__header">
+  <h1 class="page-header__title">作品集</h1>
+  <p class="page-header__description">我的作品</p>
+</header>
+
+<div class="page__content">
+  <p>我<em>喜欢</em>做的事:</p>
+
+  <ul>
+    <li>产品UI设计</li>
+    <li>网页前端页面设计</li>
+  </ul>
+</div>
+
+<div class="portfolio-items">
+  {% for work in site.work reversed %}
+  <a class="portfolio-item" style="background-color: #{{ work.color }}; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url({{ work.hero }});" href="{{ work.url }}">
+    <span class="work__title">{{ work.title }}</span>
+    <p class="work__description">{{ work.subtitle }}</p>
+  </a>
+  {% endfor %}
+</div>

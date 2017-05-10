@@ -1,1 +1,54 @@
-baseurl: /
+# Site settings
+name: Hui Zhi (支惠)
+title: "Designer who codes, blabber mouth, and coffee addict."
+email:
+description: "UI 设计师"
+url: /
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+permalink: /:year/:month/:title/
+exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+timezone: America/Chicago
+
+# Collection
+collections:
+  work:
+    output: true
+    permalink: /portfolio/:title/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "portfolio"
+
+#Misc
+mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

@@ -1,0 +1,7 @@
+<nav class="navigation" role="navigation">
+  <ul class="site__navigation">
+    <!-- <li><a href="/contact/" {% if page.url == '/contact/' %}class="current"{% endif %}>Contact</a></li> -->
+    <li><a href="/portfolio/" {% if page.url == '/portfolio/' or page.layout == 'portfolio' %}class="current"{% endif %}>Portfolio</a></li>
+    <li><a href="/resume/" {% if page.url == '/resume/' %}class="current"{% endif %}>Résumé</a></li>
+  </ul>
+</nav>
