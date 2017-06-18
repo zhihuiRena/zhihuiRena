@@ -34,8 +34,9 @@
   background-blend-mode: lighten;
   background-color: #371D5B;
   background-image: url('/../uploads/home/resume.jpg');
-  background-position: 80%;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   @media #{$small-only} {
     min-height: 300px;
