@@ -35,7 +35,7 @@
   background-color: #371D5B;
   background-image: url('/../uploads/home/resume.jpg');
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 
   @media #{$small-only} {
